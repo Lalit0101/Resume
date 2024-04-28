@@ -1,0 +1,597 @@
+* {
+    padding: 0;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: rgb(0, 0, 33);
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: 80px;
+    background-color: rgb(18, 18, 68);
+}
+
+nav .logo a {
+    font-size: 2.5rem;
+    text-decoration: none;
+    color: orangered;
+    font-weight: bolder;
+}
+
+nav .list a {
+    margin-right: 30px;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+nav .list a.active {
+    color: orangered;
+}
+
+nav .list a:hover {
+    color: orangered;
+}
+
+.hero {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 33);
+}
+
+.hero .info {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    padding-left: 70px;
+}
+
+.hero .info h3 {
+    font-size: 35px;
+    color: white;
+    padding-bottom: 40px;
+}
+
+.hero .info h3 span {
+    color: orangered;
+    text-shadow: 2px 2px 5px white;
+}
+
+.hero .info h5 {
+    color: white;
+    font-size: 35px;
+    padding-bottom: 30px;
+}
+
+.hero .info h5 span {
+    color: orangered;
+    text-shadow: 2px 2px 5px white;
+}
+
+.hero .info p {
+    color: white;
+    width: 50%;
+    line-height: 1.5rem;
+    opacity: 0.8;
+}
+
+.hero .info button {
+    width: 18%;
+    padding: 8px 0px;
+    font-size: 20px;
+    background-color: orangered;
+    border: none;
+    font-weight: bold;
+    color: white;
+    margin-top: 20px;
+    cursor: pointer;
+    box-shadow: 2px 2px 6px white, -2px -2px 6px white;
+}
+
+.hero .img {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero .img img {
+    width: 60%;
+}
+
+.hero .img::after {
+    content: " ";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border-bottom: 8px solid orangered;
+    border-left: 8px solid orangered;
+    bottom: -80px;
+    left: 50px;
+}
+
+.hero .img::before {
+    content: " ";
+    position: abolute;
+    width: 80px;
+    position: absolute;
+    height: 80px;
+    border-top: 8px solid orangered;
+    border-right: 8px solid orangered;
+    top: -80px;
+    right: 50px;
+}
+
+.about{
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: 100px 0; */
+}
+.about .photo{
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.about .photo img{
+    width: 50%;
+    padding: 20px;
+    border: 8px solid orangered;
+}
+.about .contct{
+    width: 60%;
+    color: white;
+}
+.about .contct h5{
+    text-shadow: 2px 2px 5px white;
+    color: orangered;
+    font-size: 3rem;
+    font-weight: bolder;
+    text-align: center;
+    margin: 40px 0;
+}
+.about .contct h6{
+    font-size: 20px;
+    opacity: 0.7;
+    line-height: 1.6rem;
+    width: 50%;
+    margin-bottom: 30px;
+}
+.contct .bio{
+    width: 100%;
+     display: flex; 
+}
+.contct .bio .a1{
+    width: 50%;
+}
+.contct .bio .a1 .name{
+    display: flex;
+    margin-bottom: 20px;
+}
+.contct .bio .a1 .name h4{
+    font-size: 20px;
+    color: orangered;
+    padding-right: 20px;
+}
+.contct .bio .a1 .name p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.contct .bio .a1 .birt{
+    display: flex;
+    margin-bottom: 20px;
+}
+.contct .bio .a1 .birt h4{
+    font-size: 20px;
+    color: orangered;
+    padding-right: 20px;
+}
+.contct .bio .a1 .birt p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contct .bio .a1 .deg{
+    display: flex;
+    margin-bottom: 20px;
+}
+.contct .bio .a1 .deg h4{
+    font-size: 20px;
+    color: orangered;
+    padding-right: 20px;
+}
+.contct .bio .a1 .deg p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.contct .bio .a1 .city{
+    display: flex;
+    margin-bottom: 20px;
+}
+.contct .bio .a1 .city h4{
+    font-size: 20px;
+    color: orangered;
+    padding-right: 20px;
+}
+.contct .bio .a1 .city p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.contct .bio .a1 .hoby{
+    display: flex;
+    margin-bottom: 20px;
+}
+.contct .bio .a1 .hoby h4{
+    font-size: 20px;
+    color: orangered;
+    padding-right: 20px;
+}
+.contct .bio .a1 .hoby p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.contct .bio .a2{
+    width: 50%;
+}
+
+.contct .bio .a2 .age{
+    display: flex;
+    margin-bottom: 20px;
+}
+.contct .bio .a2 .age h4{
+    font-size: 20px;
+    color: orangered;
+    padding-right: 20px;
+}
+.contct .bio .a2 .age p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.contct .bio .a2 .em{
+    display: flex;
+    margin-bottom: 20px;
+}
+.contct .bio .a2 .em h4{
+    font-size: 20px;
+    color: orangered;
+    padding-right: 20px;
+}
+.contct .bio .a2 .em p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.contct .bio .a2 .ph{
+    display: flex;
+    margin-bottom: 20px;
+}
+.contct .bio .a2 .ph h4{
+    font-size: 20px;
+    color: orangered;
+    padding-right: 20px;
+}
+.contct .bio .a2 .ph p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.contct .bio .a2 .fr{
+    display: flex;
+    margin-bottom: 20px;
+}
+.contct .bio .a2 .fr h4{
+    font-size: 20px;
+    color: orangered;
+    padding-right: 20px;
+}
+.contct .bio .a2 .fr p{
+    font-size: 18px;
+    font-weight: bold;
+}
+.contct .bio .a2 .address{
+    display: flex;
+    margin-bottom: 20px;
+}
+.contct .bio .a2 .address h4{
+    font-size: 20px;
+    color: orangered;
+    padding-right: 20px;
+}
+.contct .bio .a2 .address p{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+@media screen and (max-width:425px) {
+    nav{
+        width: 100%;
+        /* height: 70px; */
+         position: fixed; 
+         z-index: 3;
+    }
+    nav .list{
+        display: none;
+    }
+    .hero{
+        flex-direction:column-reverse;
+    }
+    .hero .img{
+     margin-top: 350px; 
+        width: 50%;
+    }
+    .hero .img img{
+        width: 100%;
+    }
+    .hero .img::after {
+        width: 50px;
+        height: 50px;
+        bottom: -50px;
+        left: -50px;
+    }
+    
+    .hero .img::before {
+        width: 50px;
+        height: 50px;
+        top: -50px;
+        right: -50px;
+    }
+    .hero .info{
+        margin-top: 100px;
+         width: 100%; 
+        display: flex;
+        align-items: start;
+    }
+    .hero .info h3{
+        font-size: 20px;
+        padding: 0;
+        margin: 0;
+    }
+    .hero .info h5{
+        font-size: 20px;
+        margin: 20px 0;
+        padding: 0;
+    }
+    .hero .info p{
+        font-size: 14px;
+        line-height: 20px;
+        width: 80%;
+    }
+    .hero .info button{
+        width: 40%;
+        font-size: 16px;
+    }
+    .about{
+        flex-direction: column;
+        margin-top: 280px;
+    }
+    .about .photo{
+        display: none;
+    }
+    .about .contct{
+        width: 100%;
+    }
+    .about .contct h6{
+       font-size: 16px;
+        width: 80%;
+        margin-left: 50px;
+    }
+    .contct .bio{
+        flex-direction: column;
+        /* margin-left: 50px; */
+    }
+    .contct .bio .a1{
+    width: 100%;
+    padding-left: 30px;
+    }
+    .contct .bio .a1 .name h4{
+        width: 30%;
+        font-size: 16px;
+    }
+    .contct .bio .a1 .name p{
+        font-size: 16px;
+    }
+    .contct .bio .a1 .birt h4{
+        width: 30%;
+        font-size: 16px;
+    }
+    .contct .bio .a1 .birt p{
+        font-size: 16px;
+    }
+    .contct .bio .a1 .deg h4{
+        width: 30%;
+        font-size: 16px;
+    }
+    .contct .bio .a1 .deg p{
+        font-size: 16px;
+    }
+    .contct .bio .a1 .city h4{
+        width: 30%;
+        font-size: 16px;
+    }
+    .contct .bio .a1 .city p{
+        font-size: 16px;
+    }
+    .contct .bio .a1 .hoby h4{
+        width: 30%;
+        font-size: 16px;
+    }
+    .contct .bio .a1 .hoby p{
+        font-size: 16px;
+    }
+    .contct .bio .a2{
+        width: 100%;
+        padding-left: 30px;
+        }
+        .contct .bio .a2 .age h4{
+            width: 30%;
+            font-size: 16px;
+        }
+        .contct .bio .a2 .age p{
+            font-size: 16px;
+        }
+        .contct .bio .a2 .em h4{
+            width: 30%;
+            font-size: 16px;
+        }
+        .contct .bio .a2 .em p{
+            font-size: 16px;
+        }
+        .contct .bio .a2 .ph h4{
+            width: 30%;
+            font-size: 16px;
+        }
+        .contct .bio .a2 .ph p{
+            font-size: 16px;
+        }
+        .contct .bio .a2 .fr h4{
+            width: 30%;
+            font-size: 16px;
+        }
+        .contct .bio .a2 .fr p{
+            font-size: 16px;
+        }
+        .contct .bio .a2 .address h4{
+            font-size: 16px;
+            width: 30%;
+        }
+        .contct .bio .a2 .address p{
+            font-size: 14px;
+        }
+
+        .skill{
+            margin-top: 100px;
+        }
+        .skill .sk h5{
+            text-shadow: 2px 2px 5px white;
+            color: orangered;
+            font-size: 3rem;
+            font-weight: bolder;
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        .skill .lan .html{
+            display: flex;
+             align-items: center; 
+            /* justify-content: center; */
+            padding-left: 30px;
+            margin-bottom: 30px;
+        }
+        .skill .lan .html h4{
+            width: 20%;
+            color: orangered;
+            font-size: 25px;
+            font-weight: bolder;
+            margin-right: 22px;
+        }
+        .skill .lan .html .mark{
+            position: relative;
+            width: 100%;
+        }
+        .skill .lan .html .mark .a1{
+            width:70%;
+            height: 30px;
+            position: absolute;
+            background-color: orangered;
+        }
+        .skill .lan .html .mark .a2{
+            width:80%;
+            height: 30px;
+            z-index: 2;
+            background-color: rgb(255, 255, 255);
+        }
+
+
+        .skill .lan .css{
+            display: flex;
+             align-items: center; 
+            /* justify-content: center; */
+            padding-left: 30px;
+            margin-bottom: 30px;
+        }
+        .skill .lan .css h4{
+            width: 20%;
+            color: orangered;
+            font-size: 25px;
+            font-weight: bolder;
+            margin-right: 30px;
+        }
+        .skill .lan .css .mark{
+            position: relative;
+            width: 100%;
+        }
+        .skill .lan .css .mark .a1{
+            width:60%;
+            height: 30px;
+            position: absolute;
+            background-color: orangered;
+        }
+        .skill .lan .css .mark .a2{
+            width:80%;
+            height: 30px;
+            z-index: 2;
+            background-color: rgb(255, 255, 255);
+        }
+
+
+        .skill .lan .js{
+            display: flex;
+             align-items: center; 
+            /* justify-content: center; */
+            padding-left: 30px;
+            margin-bottom: 30px;
+        }
+        .skill .lan .js h4{
+            width: 20%;
+            color: orangered;
+            font-size: 25px;
+            font-weight: bolder;
+            margin-right: 30px;
+        }
+        .skill .lan .js .mark{
+            position: relative;
+            width: 100%;
+        }
+        .skill .lan .js .mark .a1{
+            width:30%;
+            height: 30px;
+            position: absolute;
+            background-color: orangered;
+        }
+        .skill .lan .js .mark .a2{
+            width:80%;
+            height: 30px;
+            z-index: 2;
+            background-color: rgb(255, 255, 255);
+        }
+
+
+        .cont .con h4{
+            text-shadow: 2px 2px 5px white;
+            color: orangered;
+            font-size: 3rem;
+            font-weight: bolder;
+            text-align: center;
+            margin: 40px 0;
+        }
+        .cont .icon{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+}
