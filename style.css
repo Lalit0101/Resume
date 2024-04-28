@@ -57,7 +57,7 @@ nav .list a:hover {
     padding-left: 70px;
 }
 
-.hero .info h3 {
+.hero .info h3{
     font-size: 35px;
     color: white;
     padding-bottom: 40px;
@@ -65,7 +65,7 @@ nav .list a:hover {
 
 .hero .info h3 span {
     color: orangered;
-    text-shadow: 2px 2px 5px white;
+    text-shadow: 2px 2px 3px white;
 }
 
 .hero .info h5 {
@@ -96,7 +96,7 @@ nav .list a:hover {
     color: white;
     margin-top: 20px;
     cursor: pointer;
-    box-shadow: 2px 2px 6px white, -2px -2px 6px white;
+    box-shadow: 2px 2px 5px rgb(255, 255, 255), -2px -2px 6px rgb(0, 0, 0);
 }
 
 .hero .img {
@@ -331,7 +331,7 @@ nav .list a:hover {
         flex-direction:column-reverse;
     }
     .hero .img{
-     margin-top: 350px; 
+     margin-top: 270px; 
         width: 50%;
     }
     .hero .img img{
@@ -355,16 +355,27 @@ nav .list a:hover {
          width: 100%; 
         display: flex;
         align-items: start;
+        padding-left: 40px;
     }
+
     .hero .info h3{
-        font-size: 20px;
+        font-size: 17px;
         padding: 0;
         margin: 0;
+        
+    }
+    .hero .info h3 span{
+        font-size: 27px;
+        text-shadow: 0 0 0 white;
     }
     .hero .info h5{
-        font-size: 20px;
+        font-size: 17px;
         margin: 20px 0;
         padding: 0;
+    }
+    .hero .info h5 span{
+        font-size: 27px;
+        text-shadow: none;
     }
     .hero .info p{
         font-size: 14px;
@@ -374,10 +385,11 @@ nav .list a:hover {
     .hero .info button{
         width: 40%;
         font-size: 16px;
+        margin-top: 20px;
     }
     .about{
         flex-direction: column;
-        margin-top: 280px;
+        margin-top: 130px;
     }
     .about .photo{
         display: none;
@@ -474,7 +486,7 @@ nav .list a:hover {
         }
 
         .skill{
-            margin-top: 100px;
+            margin-top: 75px;
         }
         .skill .sk h5{
             text-shadow: 2px 2px 5px white;
@@ -589,9 +601,16 @@ nav .list a:hover {
             text-align: center;
             margin: 40px 0;
         }
-        .cont .icon{
-            display: flex;
-            align-items: center;
-            justify-content: center;
+        .cont .icon a{
+              display: flex;
+             align-items: center;
+            justify-content: center;  
+            margin-bottom: 20px;
+            cursor: pointer;
         }
+        .cont .icon a img{
+            display: flex;
+            width: 10%;
+        }
+
 }
