@@ -389,7 +389,7 @@ nav .list a:hover {
     }
     .about{
         flex-direction: column;
-        margin-top: 100px;
+        margin-top: 140px;
     }
     .about .photo{
         display: none;
